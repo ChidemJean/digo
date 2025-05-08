@@ -39,7 +39,7 @@ go get github.com/ChidemJean/digo
 
 ```go
 
-// Init container
+// Instantiating container
 container := digo.New()
 
 // Register a concrete implementation
