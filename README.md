@@ -1,4 +1,4 @@
-# Digo: A Dependency injection for Go
+# Digo: Dependency injection for Go
 
 Digo is a lightweight and extensible Dependency Injection container for Go — featuring constructor-based resolution, interface mapping, lifecycle scopes, and recursive instantiation.
 
