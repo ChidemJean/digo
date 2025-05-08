@@ -10,8 +10,6 @@ Register factory functions (constructors) that the container uses to instantiate
 - Arrays and slices  
 - Nested structs and complex object graphs  
 
-This enables clean, declarative dependency wiring with minimal boilerplate.
-
 ### Interface Registers  
 Map interfaces to their concrete implementations.  
 This allows the container to resolve abstractions without hardcoding dependencies, making your architecture more flexible and testable.
@@ -28,8 +26,6 @@ Dependencies are resolved recursively, including any sub-dependencies required b
 Supports:
 - Optional fields (when nil is acceptable)  
 - Default values (when handled in constructors)  
-
-This enables effortless instantiation of complex structures.
 
 ## Installation
 
