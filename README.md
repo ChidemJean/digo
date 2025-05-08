@@ -43,10 +43,10 @@ go get github.com/ChidemJean/digo
 container := digo.New()
 
 // Register a concrete implementation
-container.Register(NewEmailNotifier, container.Singleton)
+container.Register(NewEmailNotifier, digo.Singleton)
 
 // Register a service that depends on the interface
-container.Register(NewAlertService, container.Transient)
+container.Register(NewAlertService, digo.Transient)
 
 // Map the interface to the implementation
 container.RegisterInterface((*Notifier)(nil), &EmailNotifier{})
