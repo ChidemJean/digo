@@ -38,6 +38,10 @@ go get github.com/ChidemJean/digo
 ## Example
 
 ```go
+
+// Init container
+container := digo.New()
+
 // Register a concrete implementation
 container.Register(NewEmailNotifier, container.Singleton)
 
@@ -48,5 +52,5 @@ container.Register(NewAlertService, container.Transient)
 container.RegisterInterface((*Notifier)(nil), &EmailNotifier{})
 
 // Resolve and use
-alert := container.Resolve[AlertService]()
+alert := container.Resolve[Notifier]()
 alert.Send()
