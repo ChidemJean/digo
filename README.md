@@ -52,5 +52,5 @@ container.Register(NewAlertService, container.Transient)
 container.RegisterInterface((*Notifier)(nil), &EmailNotifier{})
 
 // Resolve and use
-alert := container.Resolve[Notifier]()
+alert := digo.Resolve[Notifier]()
 alert.Send()
